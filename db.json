@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "admin",
+      "password": "admin",
+      "email": "akshay@gmail.com",
+      "phone": "8989898989",
+      "country": "usa",
+      "address": "",
+      "role": "admin",
+      "gender": "male",
+      "isAdmin": true,
+      "isTechSupport": false
+    },
+    {
+      "id": "user",
+      "name": "user",
+      "password": "user",
+      "email": "email@email.com",
+      "phone": "56778889989",
+      "country": "singapore",
+      "address": "address1\naddrees2",
+      "role": "user",
+      "gender": "male",
+      "isAdmin": false,
+      "isTechSupport": false
+    },
+    {
+      "id": "cuser",
+      "name": "cuser",
+      "password": "user",
+      "email": "email@email.com",
+      "phone": "56778889989",
+      "country": "singapore",
+      "address": "address1\naddrees2",
+      "role": "user",
+      "gender": "male",
+      "isAdmin": false,
+      "isTechSupport": false
+    },
+    {
+      "id": "techSupportA",
+      "name": "techSupportA",
+      "password": "Password@1",
+      "email": "tech@email.com",
+      "phone": "1234567890",
+      "country": "uk",
+      "address": "tech address",
+      "role": "techSupport",
+      "gender": "female",
+      "isAdmin": false,
+      "isTechSupport": true
+    },
+    {
+      "id": "techSupportB",
+      "name": "techSupportB",
+      "password": "Password@1",
+      "email": "anothertech@email.com",
+      "phone": "9876543210",
+      "country": "USA",
+      "address": "Another Tech Address",
+      "role": "techSupport",
+      "gender": "male",
+      "isAdmin": false,
+      "isTechSupport": true
+    }
+  ],
+  "query": [
+    {
+      "id": "11ee",
+      "username": "cuser",
+      "query": "new query",
+      "reply": "query resolved",
+      "status": "closed",
+      "email": "cuser@in.com",
+      "assign": "techSupportA",
+      "created_at": "2024-04-09T12:00:00Z",
+      "resolved_at": "2024-04-09T13:00:00Z"
+    },
+    {
+      "id": "3e83",
+      "username": "cuser",
+      "query": "add 2nd query",
+      "reply": "new data.",
+      "status": "closed",
+      "email": "akshay@gmail.com",
+      "assign": "techSupportB",
+      "created_at": "2024-04-08T10:00:00Z",
+      "resolved_at": "2024-04-08T11:00:00Z"
+    },
+    {
+      "id": "8e20",
+      "username": "cuser",
+      "query": "query_94",
+      "reply": "please wait....",
+      "status": "pending",
+      "assign": "techSupportA",
+      "created_at": "2024-04-07T15:00:00Z"
+    },
+    {
+      "id": "7b4d",
+      "username": "user",
+      "query": "query2",
+      "reply": "",
+      "status": "pending",
+      "assign": "techSupportB"
+    },
+    {
+      "id": "9a06",
+      "username": "cuser",
+      "query": "query4",
+      "reply": "",
+      "status": "created",
+      "assign": "techSupportA"
+    }
+  ]
+}
