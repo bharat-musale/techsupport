@@ -1,70 +1,88 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center" id="title">TechSupport</h1>
 
-## Available Scripts
+<p align="center"><img src="https://socialify.git.ci/bharat-musale/techsupport/image?description=1&amp;descriptionEditable=TechSupport%20is%20a%20web%20application%20developed%20using%20React%2CIt%20provides%20a%20platform%20for%20managing%20user%20queries%20and%20support%20tickets%20efficiently.&amp;font=Inter&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Formal%20Invitation&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
-In the project directory, you can run:
+<p id="description">TechSupport is a web application developed using React a popular JavaScript library for building user interfaces. It provides a platform for managing user queries and support tickets efficiently.</p>
 
-### `npm start`
+<h2>🚀 Demo</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[https://techsupportapp.netlify.app/](https://techsupportapp.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>Project Screenshots:</h2>
 
-### `npm test`
+<img src="https://res.cloudinary.com/daol8qaa1/image/upload/v1712911544/gae8azmoycacmtob1typ.png" alt="project-screenshot" width="400" height="400/">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://res.cloudinary.com/daol8qaa1/image/upload/v1712911544/g2tsalns5l4lu8jitqv9.png" alt="project-screenshot" width="400" height="400/">
 
-### `npm run build`
+<img src="https://res.cloudinary.com/daol8qaa1/image/upload/v1712911545/qdkyfprosj9uc1fsvkdv.png" alt="project-screenshot" width="400" height="400/">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://res.cloudinary.com/daol8qaa1/image/upload/v1712911544/msebp7atttfjo8wsomdb.png" alt="project-screenshot" width="400" height="400/">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://res.cloudinary.com/daol8qaa1/image/upload/v1712911544/aj1rpezb82fihpeek8f4.png" alt="project-screenshot" width="400" height="400/">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://res.cloudinary.com/daol8qaa1/image/upload/v1712911544/oy87iwf45mjwabtaeuxj.png" alt="project-screenshot" width="400" height="400/">
 
-### `npm run eject`
+<img src="https://res.cloudinary.com/daol8qaa1/image/upload/v1712911544/a3fniqbe2whhgs8mpvat.png" alt="project-screenshot" width="400" height="400/">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  
+  
+<h2>🧐 Features</h2>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here're some of the project's best features:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+*   User Role Management: The application supports different user roles such as admin tech support and regular users each with specific privileges and access levels.
+*   Query Management: Users can submit queries which are then assigned to appropriate support personnel for resolution. Queries can be tracked from submission to resolution.
+*   Role-Based Visibility: Certain features and data are accessible only to users with specific roles ensuring secure access control.
+*   Responsive Design: The application is built with responsiveness in mind ensuring a seamless user experience across various devices and screen sizes.
+*   Customizable: TechSupport is highly customizable allowing administrators to configure settings manage user roles and customize the user interface according to their requirements.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h2>🛠️ Installation Steps:</h2>
 
-## Learn More
+<p>1. Clone the repository:</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+https://github.com/bharat-musale/techsupport.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p>2. Navigate to the project directory:</p>
 
-### Code Splitting
+```
+cd techsupport
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p>3. Install dependencies:</p>
 
-### Analyzing the Bundle Size
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p>4. Start the development server:</p>
 
-### Making a Progressive Web App
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p>5. For backend server :</p>
 
-### Advanced Configuration
+```
+npm install -g json-server
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p>6. Run derver:</p>
 
-### Deployment
+```
+json-server --watch db.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<h2>🍰 Contribution Guidelines:</h2>
 
-### `npm run build` fails to minify
+We welcome contributions from the community to improve TechSupport. If you'd like to contribute please follow these guidelines: Fork the repository and create a new branch for your feature or bug fix. Make your changes and ensure that the code passes all tests. Submit a pull request detailing the changes you've made.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   react.js
