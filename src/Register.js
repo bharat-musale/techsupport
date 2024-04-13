@@ -64,7 +64,7 @@ const Register = () => {
 
       role: "user",
       isAdmin: false,
-      isTechSupport: false,
+      isTechSupport: false
     };
     if (IsValidate()) {
       fetch("https://techsupport-k0vf.onrender.com/users", {
