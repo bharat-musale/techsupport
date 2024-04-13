@@ -43,7 +43,7 @@ const Login = () => {
     e.preventDefault();
     if (validate()) {
       let inputobj = { username: username, password: password };
-      fetch("https://localhost:44308/User/Authenticate", {
+      fetch("https://techsupport-k0vf.onrender.com/User/Authenticate", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(inputobj),

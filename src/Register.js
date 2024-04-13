@@ -10,7 +10,10 @@ const Register = () => {
   const [phone, phonechange] = useState("");
   const [country, countrychange] = useState("india");
   const [address, addresschange] = useState("");
-  const [gender, genderchange] = useState("female");
+  const [gender, genderchange] = useState("");
+  const [role, rolechange] = useState("user");
+  const isAdmin = useState("false");
+  const isTechSupport = useState("false");
 
   const navigate = useNavigate();
 
@@ -48,9 +51,23 @@ const Register = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    let regobj = { id, name, password, email, phone, country, address, gender };
+
+    let regobj = {
+      id,
+      name,
+      password,
+      email,
+      phone,
+      country,
+      address,
+      gender,
+
+      role: "user",
+      isAdmin: false,
+      isTechSupport: false,
+    };
     if (IsValidate()) {
-      fetch("https://techsupport-k0vf.onrender.com/user", {
+      fetch("https://techsupport-k0vf.onrender.com/users", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(regobj),
