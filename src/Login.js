@@ -15,13 +15,11 @@ const Login = () => {
   const ProceedLogin = (e) => {
     e.preventDefault();
     if (validate()) {
- 
-      fetch("http://localhost:3000/users/" + username)
+      fetch("https://techsupportapp.netlify.app/users/" + username)
         .then((res) => {
           return res.json();
         })
         .then((resp) => {
-          
           if (Object.keys(resp).length === 0) {
             toast.error("Please Enter valid username");
           } else {
@@ -44,7 +42,6 @@ const Login = () => {
   const ProceedLoginusingAPI = (e) => {
     e.preventDefault();
     if (validate()) {
-    
       let inputobj = { username: username, password: password };
       fetch("https://localhost:44308/User/Authenticate", {
         method: "POST",
@@ -64,7 +61,6 @@ const Login = () => {
             sessionStorage.setItem("jwttoken", resp.jwtToken);
             usenavigate("/");
           }
- 
         })
         .catch((err) => {
           toast.error("Login Failed due to :" + err.message);

@@ -19,7 +19,7 @@ const CommonTable = () => {
     }
   }, [username, userrole]);
   const getUsers = () => {
-    fetch("http://localhost:3000/users")
+    fetch("https://techsupportapp.netlify.app/users")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch queries");
@@ -38,7 +38,7 @@ const CommonTable = () => {
       });
   };
   const getAllQueries = () => {
-    fetch("http://localhost:3000/query")
+    fetch("https://techsupportapp.netlify.app/query")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch queries");
@@ -75,7 +75,7 @@ const CommonTable = () => {
       assign: "",
     };
 
-    fetch("http://localhost:3000/query", {
+    fetch("https://techsupportapp.netlify.app/query", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(regobj),
@@ -98,12 +98,12 @@ const CommonTable = () => {
   };
 
   const handleRemove = (record) => {
-    fetch(`http://localhost:3000/query/${record.id}`, {
+    fetch(`https://techsupportapp.netlify.app/query/${record.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ...record, status: "closed" }), 
+      body: JSON.stringify({ ...record, status: "closed" }),
     })
       .then((res) => {
         if (res.ok) {
@@ -142,7 +142,7 @@ const CommonTable = () => {
 
   const submitQueryAssigne = (record) => {
     console.log(record);
-    fetch(`http://localhost:3000/query/${record.id}`, {
+    fetch(`https://techsupportapp.netlify.app/query/${record.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -200,16 +200,17 @@ const CommonTable = () => {
       title: "Assign To",
       dataIndex: "assign",
       key: "assign",
-      render: (record, index) => 
-     ( <select value={record} onChange={(e) => ChangeAssign(e, record, index)}>
-        <option value="">Select User</option>
-        {techRole.map((role, roleIndex) => (
-          <option key={roleIndex} value={role.name}>
-            {role.name}
-          </option>
-        ))}
-        <option value="None">None</option>
-      </select> ),
+      render: (record, index) => (
+        <select value={record} onChange={(e) => ChangeAssign(e, record, index)}>
+          <option value="">Select User</option>
+          {techRole.map((role, roleIndex) => (
+            <option key={roleIndex} value={role.name}>
+              {role.name}
+            </option>
+          ))}
+          <option value="None">None</option>
+        </select>
+      ),
       className: userrole != "admin" && "hidden-column",
     },
     {
@@ -229,7 +230,7 @@ const CommonTable = () => {
   ];
 
   const submitQueryReply = (record) => {
-    fetch(`http://localhost:3000/query/${record.id}`, {
+    fetch(`https://techsupportapp.netlify.app/query/${record.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
