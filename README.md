@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://techsupport-k0vf.onrender.com/](https://techsupport-k0vf.onrender.com/)
+[https://techsupportapp.netlify.app/](https://techsupportapp.netlify.app/)
 
 <h2>Project Screenshots:</h2>
 
