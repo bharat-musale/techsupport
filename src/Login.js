@@ -15,7 +15,7 @@ const Login = () => {
   const ProceedLogin = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch("https://techsupportapp.netlify.app/users/" + username)
+      fetch("https://techsupport-k0vf.onrender.com/users/" + username)
         .then((res) => {
           return res.json();
         })

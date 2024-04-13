@@ -19,7 +19,7 @@ const CommonTable = () => {
     }
   }, [username, userrole]);
   const getUsers = () => {
-    fetch("https://techsupportapp.netlify.app/users")
+    fetch("https://techsupport-k0vf.onrender.com/users")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch queries");
@@ -38,7 +38,7 @@ const CommonTable = () => {
       });
   };
   const getAllQueries = () => {
-    fetch("https://techsupportapp.netlify.app/query")
+    fetch("https://techsupport-k0vf.onrender.com/query")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch queries");
@@ -75,7 +75,7 @@ const CommonTable = () => {
       assign: "",
     };
 
-    fetch("https://techsupportapp.netlify.app/query", {
+    fetch("https://techsupport-k0vf.onrender.com/query", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(regobj),
@@ -98,7 +98,7 @@ const CommonTable = () => {
   };
 
   const handleRemove = (record) => {
-    fetch(`https://techsupportapp.netlify.app/query/${record.id}`, {
+    fetch(`https://techsupport-k0vf.onrender.com/query/${record.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -142,7 +142,7 @@ const CommonTable = () => {
 
   const submitQueryAssigne = (record) => {
     console.log(record);
-    fetch(`https://techsupportapp.netlify.app/query/${record.id}`, {
+    fetch(`https://techsupport-k0vf.onrender.com/query/${record.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -230,7 +230,7 @@ const CommonTable = () => {
   ];
 
   const submitQueryReply = (record) => {
-    fetch(`https://techsupportapp.netlify.app/query/${record.id}`, {
+    fetch(`https://techsupport-k0vf.onrender.com/query/${record.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
